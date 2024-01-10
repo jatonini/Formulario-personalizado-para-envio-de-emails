@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: relative;
+  background-image: url(imagem_fundo_Fox_atualizada.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.formulario {
+  position: relative;
+  padding: 10px 45px;
+  background: #397e98;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.titulo_formulario {
+  font-family: Rockwell;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin: 2rem;
+}
+
+.label_formulario {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f5;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.input_formulario {
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: all 0.5s;
+  width: 100%;
+}
+
+.input_formulario:focus {
+  border-radius: 16px;
+}
+
+.input_formulario::placeholder {
+  color: black;
+}
+
+.area_texto {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+
+.area_texto:focus {
+  border-radius: 16px;
+}
+
+.area_texto::placeholder {
+  color: black;
+}
+
+.botao_formulario {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  transition: all 1s;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.botao_formulario:hover {
+  background: #f5f5f5;
+  color: #101026;
+  border-radius: 16px;
+}
+
+.botao {
+  position: absolute;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 3rem;
+  padding: 0.65rem 2.5rem;
+  color: white;
+  background-color: #1a77a4;
+  border-color: white;
+  bottom: 10%;
+  left: 10%;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #f5f5f5;
+  color: #101026;
+  border-radius: 16px;
+}
+
+.fecharBotao {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+}
+
+.circulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}

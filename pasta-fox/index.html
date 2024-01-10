@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foxagronegocio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function exibirFormulario() {
+        var formulario = document.getElementById("meuFormulario");
+        formulario.style.display = "block";
+        formulario.classList.add("mostrar");
+      }
+
+      function fecharFormulario() {
+        var formulario = document.getElementById("meuFormulario");
+        formulario.style.display = "none";
+        formulario.classList.remove("mostrar");
+      }
+    </script>
+  </head>
+
+  <body class="container">
+    <button class="botao" onclick="exibirFormulario()">
+      Entrar em Contato
+    </button>
+
+    <form
+      action="https://formsubmit.co/contato@foxagronegocio.com.br"
+      input
+      method="POST"
+      id="meuFormulario"
+      style="display: none"
+      class="formulario"
+    >
+      <h2 class="titulo_formulario">Fale Conosco</h2>
+
+      <button class="fecharBotao" onclick="fecharFormulario()">
+        <span class="circulo">X</span>
+      </button>
+
+      <input type="hidden" name="_subject" value="Novo email!" />
+
+      <label class="label_formulario">Seu nome</label>
+      <input
+        class="input_formulario"
+        type="text"
+        name="nome"
+        required
+        autocomplete="off"
+        placeholder="Digite seu nome"
+      />
+
+      <label class="label_formulario">Informe seu email de contato</label>
+      <input
+        class="input_formulario"
+        type="email"
+        name="email"
+        required
+        autocomplete="off"
+        placeholder="Digite seu email"
+      />
+
+      <label class="label_formulario"
+        >Nos informe o motivo do seu contato</label
+      >
+      <textarea
+        class="area_texto"
+        name="mensagem"
+        placeholder="Digite sua mensagem"
+        required
+      ></textarea>
+
+      <button class="botao_formulario" type="submit">Enviar</button>
+
+      <input type="hidden" name="_captcha" value="false" />
+
+      <input
+        type="hidden"
+        name="_next"
+        value="https://www.foxagronegocio.com.br"
+      />
+    </form>
+  </body>
+</html>
